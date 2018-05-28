@@ -14,6 +14,7 @@
 		4C18031120B77B6A00E8665D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C18030F20B77B6A00E8665D /* LaunchScreen.storyboard */; };
 		4C18031C20B77B6A00E8665D /* FormatTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18031B20B77B6A00E8665D /* FormatTesterTests.swift */; };
 		4C18032720B77B6B00E8665D /* FormatTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18032620B77B6B00E8665D /* FormatTesterUITests.swift */; };
+		4CAA11A520B7E623001185D0 /* EnTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA11A420B7E623001185D0 /* EnTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4C18032220B77B6B00E8665D /* FormatTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormatTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C18032620B77B6B00E8665D /* FormatTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTesterUITests.swift; sourceTree = "<group>"; };
 		4C18032820B77B6B00E8665D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAA11A420B7E623001185D0 /* EnTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4C18030620B77B6900E8665D /* AppDelegate.swift */,
 				4C18030820B77B6900E8665D /* ViewController.swift */,
 				4C18030A20B77B6900E8665D /* Main.storyboard */,
+				4CAA11A420B7E623001185D0 /* EnTextField.swift */,
 				4C18030D20B77B6A00E8665D /* Assets.xcassets */,
 				4C18030F20B77B6A00E8665D /* LaunchScreen.storyboard */,
 				4C18031220B77B6A00E8665D /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				4C18030920B77B6900E8665D /* ViewController.swift in Sources */,
 				4C18030720B77B6900E8665D /* AppDelegate.swift in Sources */,
+				4CAA11A520B7E623001185D0 /* EnTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
