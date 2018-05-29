@@ -18,6 +18,14 @@ class ViewController: UIViewController {
     var inputValue:NSNumber?
     var formatter: NumberFormatter?
     
+    @IBOutlet weak var regionLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var decimalLabel: UILabel!
+    @IBOutlet weak var groupingLabel: UILabel!
+    
+    @IBOutlet weak var textInputModeLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,6 +34,12 @@ class ViewController: UIViewController {
         formatter?.minimumFractionDigits = 3
         formatter?.maximumFractionDigits = 6
 
+        regionLabel.text = Locale.autoupdatingCurrent.regionCode
+        languageLabel.text = Locale.autoupdatingCurrent.languageCode
+        decimalLabel.text = Locale.autoupdatingCurrent.decimalSeparator
+        groupingLabel.text = Locale.autoupdatingCurrent.groupingSeparator
+        
+        textInputModeLabel.text = frequencyInputField.textInputMode?.primaryLanguage?.description
     }
 
     override func didReceiveMemoryWarning() {

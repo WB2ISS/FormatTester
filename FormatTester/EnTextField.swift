@@ -16,7 +16,7 @@ class EnTextField: UITextField {
     
     class EnTextInputMode: UITextInputMode {
         override var primaryLanguage: String? {
-            return "en-US"
+            return "fr-US"
         }
     }
 }
