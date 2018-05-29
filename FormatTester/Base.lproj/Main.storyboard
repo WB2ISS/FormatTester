@@ -95,6 +95,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu5-TK-wwy">
+                                <rect key="frame" x="247" y="568" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="oyi-tF-qe4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="languageCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-aE-OTu">
                                 <rect key="frame" x="127" y="388" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -113,8 +122,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="regionCode" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-Vp-r7p">
-                                <rect key="frame" x="150" y="343" width="89" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="regionCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-Vp-r7p">
+                                <rect key="frame" x="150" y="344" width="89" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,10 +134,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="acceptDecimalComma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52y-pj-jlk">
+                                <rect key="frame" x="65" y="568" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="52y-pj-jlk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ua-8W-yaS"/>
                             <constraint firstItem="IZz-xM-Y21" firstAttribute="leading" secondItem="lcS-Vp-r7p" secondAttribute="trailing" constant="8" id="5sD-OF-ozQ"/>
+                            <constraint firstItem="52y-pj-jlk" firstAttribute="centerY" secondItem="bu5-TK-wwy" secondAttribute="centerY" id="5w1-cn-1f3"/>
                             <constraint firstItem="4Pa-F5-aKq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Hb-9A-RGH"/>
                             <constraint firstItem="lcS-Vp-r7p" firstAttribute="bottom" secondItem="IZz-xM-Y21" secondAttribute="bottom" id="83j-ph-Oux"/>
                             <constraint firstItem="hcS-aE-OTu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9pS-7R-BnZ"/>
@@ -143,14 +160,18 @@
                             <constraint firstItem="85c-np-pVo" firstAttribute="leading" secondItem="8qQ-Uo-hTT" secondAttribute="trailing" constant="8" id="UGf-t8-Luc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Pa-F5-aKq" secondAttribute="trailing" constant="22" id="Xop-Go-imA"/>
                             <constraint firstItem="LGB-jO-sLS" firstAttribute="leading" secondItem="qI2-w7-uKL" secondAttribute="trailing" constant="8" id="Y8v-zu-3yB"/>
+                            <constraint firstItem="bu5-TK-wwy" firstAttribute="leading" secondItem="52y-pj-jlk" secondAttribute="trailing" constant="8" id="ado-ch-afg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1b-h6-OQg" secondAttribute="trailing" constant="64" id="atf-tB-gt2"/>
                             <constraint firstItem="U1b-h6-OQg" firstAttribute="top" secondItem="LGB-jO-sLS" secondAttribute="bottom" constant="24" id="biO-Gt-GSS"/>
+                            <constraint firstItem="bu5-TK-wwy" firstAttribute="top" secondItem="85c-np-pVo" secondAttribute="bottom" constant="24" id="cI6-tD-clq"/>
                             <constraint firstItem="WcC-Bl-tjT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dB7-Yc-jKT"/>
                             <constraint firstItem="IZz-xM-Y21" firstAttribute="top" secondItem="mpO-Z2-JXP" secondAttribute="bottom" constant="100" id="eUN-Gv-FX4"/>
+                            <constraint firstItem="52y-pj-jlk" firstAttribute="bottom" secondItem="bu5-TK-wwy" secondAttribute="bottom" id="fnJ-El-PJA"/>
                             <constraint firstItem="4Pa-F5-aKq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fsh-Qg-kWq"/>
                             <constraint firstItem="85c-np-pVo" firstAttribute="top" secondItem="U1b-h6-OQg" secondAttribute="bottom" constant="24" id="fyo-M2-Vhz"/>
                             <constraint firstItem="hcS-aE-OTu" firstAttribute="bottom" secondItem="1Ak-ly-nAq" secondAttribute="bottom" id="g82-w7-RiO"/>
                             <constraint firstItem="qI2-w7-uKL" firstAttribute="bottom" secondItem="LGB-jO-sLS" secondAttribute="bottom" id="hln-8X-vj0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bu5-TK-wwy" secondAttribute="trailing" constant="64" id="jKh-uG-Xwf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="85c-np-pVo" secondAttribute="trailing" constant="64" id="riU-3g-IJL"/>
                             <constraint firstItem="LGB-jO-sLS" firstAttribute="top" secondItem="1Ak-ly-nAq" secondAttribute="bottom" constant="24" id="s50-Va-hBg"/>
                             <constraint firstItem="OuW-oH-pPq" firstAttribute="top" secondItem="mpO-Z2-JXP" secondAttribute="bottom" constant="46" id="tHE-x4-HCu"/>
@@ -164,6 +185,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="decimalCommaLabel" destination="bu5-TK-wwy" id="pfT-f2-foB"/>
                         <outlet property="decimalLabel" destination="LGB-jO-sLS" id="V9M-Fg-Q4Z"/>
                         <outlet property="frequencyInputField" destination="mpO-Z2-JXP" id="M7b-S7-hci"/>
                         <outlet property="frequencyOutputField" destination="OuW-oH-pPq" id="MKO-9j-pnB"/>

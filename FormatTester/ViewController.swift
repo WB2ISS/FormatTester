@@ -22,9 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var decimalLabel: UILabel!
     @IBOutlet weak var groupingLabel: UILabel!
+    @IBOutlet weak var decimalCommaLabel: UILabel!
     
     @IBOutlet weak var textInputModeLabel: UILabel!
     
+    var acceptDecimalComma: Bool {
+        if let decimalSeparator = Locale.current.decimalSeparator {
+            if decimalSeparator == "," { return true }
+        }
+        return false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +47,9 @@ class ViewController: UIViewController {
         groupingLabel.text = Locale.autoupdatingCurrent.groupingSeparator
         
         textInputModeLabel.text = frequencyInputField.textInputMode?.primaryLanguage?.description
+        
+        decimalCommaLabel.text = "\(acceptDecimalComma)"
+        
     }
 
     override func didReceiveMemoryWarning() {
