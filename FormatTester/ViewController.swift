@@ -50,7 +50,25 @@ class ViewController: UIViewController {
         
         decimalCommaLabel.text = "\(acceptDecimalComma)"
         
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector((changeInputMode(_ :))),
+                                               name: NSNotification.Name.UITextInputCurrentInputModeDidChange, object: nil)
+        
     }
+    
+@objc func changeInputMode(_ notification : NSNotification)
+    {
+        let primaryLanguage = frequencyInputField.textInputMode?.primaryLanguage?.description
+        print("primaryLanguage: \(String(describing: primaryLanguage))")
+    }
+    
+    
+    @IBAction func choosePrimaryLanguage(_ sender: UIButton) {
+        print("\(String(describing: sender.currentTitle))")
+        frequencyInputField.textInputMode?.textInputModePrimaryLanguage = sender.currentTitle
+        textInputModeLabel.text = frequencyInputField.textInputMode?.primaryLanguage?.description
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -9,14 +9,21 @@
 import UIKit
 
 class EnTextField: UITextField {
+    
+    var inputMode: EnTextInputMode? = EnTextInputMode()
 
     override var textInputMode: EnTextInputMode? {
-        return EnTextInputMode()
+        return inputMode
     }
     
     class EnTextInputMode: UITextInputMode {
+        var textInputModePrimaryLanguage: String? = "en-US" {
+            didSet {
+                print("was \(String(describing: oldValue)), now \(String(describing: textInputModePrimaryLanguage))")
+            }
+        }
         override var primaryLanguage: String? {
-            return "fr-US"
+            return textInputModePrimaryLanguage
         }
     }
 }

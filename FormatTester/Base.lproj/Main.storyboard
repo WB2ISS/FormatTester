@@ -102,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locale.autoupdatingCurrent.decimalSeparator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qI2-w7-uKL">
-                                <rect key="frame" x="7.6666666666666572" y="443" width="311" height="14"/>
+                                <rect key="frame" x="7.6666666666666572" y="443" width="310.66666666666674" height="14"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,13 +114,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locale.autoupdatingCurrent.regionCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-Vp-r7p">
-                                <rect key="frame" x="8" y="367" width="267.66666666666669" height="14"/>
+                                <rect key="frame" x="8" y="367" width="267.33333333333331" height="14"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="textInputMode.primaryLanguage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-Uo-hTT">
-                                <rect key="frame" x="8" y="519" width="210" height="14"/>
+                                <rect key="frame" x="8" y="519" width="209.66666666666666" height="14"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="acceptDecimalComma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52y-pj-jlk">
+                                <rect key="frame" x="8" y="557" width="130.33333333333334" height="14"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,16 +140,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="acceptDecimalComma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52y-pj-jlk">
-                                <rect key="frame" x="8" y="557" width="130.66666666666666" height="14"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksa-3r-apQ">
+                                <rect key="frame" x="113.00000000000001" y="619" width="149.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-6o-xZJ">
+                                <rect key="frame" x="41" y="670.66666666666663" width="292" height="26"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeE-ee-un2">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="26"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <state key="normal" title="en-US"/>
+                                        <connections>
+                                            <action selector="choosePrimaryLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hf0-bN-kKX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZq-7u-3uR">
+                                        <rect key="frame" x="85" y="0.0" width="37" height="26"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <state key="normal" title="fr-US"/>
+                                        <connections>
+                                            <action selector="choosePrimaryLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jto-g5-YV1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcx-kS-cHp">
+                                        <rect key="frame" x="170" y="0.0" width="37" height="26"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <state key="normal" title="fr-FR"/>
+                                        <connections>
+                                            <action selector="choosePrimaryLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1O-WO-KY8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPv-b9-Y7g">
+                                        <rect key="frame" x="255" y="0.0" width="37" height="26"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <state key="normal" title="en-TR"/>
+                                        <connections>
+                                            <action selector="choosePrimaryLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzE-Sn-BfN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="52y-pj-jlk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="2ua-8W-yaS"/>
+                            <constraint firstItem="4Ql-6o-xZJ" firstAttribute="top" secondItem="ksa-3r-apQ" secondAttribute="bottom" constant="32" id="4BW-mh-SNb"/>
                             <constraint firstItem="52y-pj-jlk" firstAttribute="centerY" secondItem="bu5-TK-wwy" secondAttribute="centerY" id="5w1-cn-1f3"/>
                             <constraint firstItem="4Pa-F5-aKq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Hb-9A-RGH"/>
                             <constraint firstItem="lcS-Vp-r7p" firstAttribute="bottom" secondItem="IZz-xM-Y21" secondAttribute="bottom" id="83j-ph-Oux"/>
@@ -152,9 +196,11 @@
                             <constraint firstItem="OuW-oH-pPq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ChA-NI-nqT"/>
                             <constraint firstItem="mpO-Z2-JXP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DTP-s6-ktW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IZz-xM-Y21" secondAttribute="trailing" constant="12" id="ENk-QG-TXc"/>
+                            <constraint firstItem="ksa-3r-apQ" firstAttribute="top" secondItem="52y-pj-jlk" secondAttribute="bottom" constant="48" id="FL6-0e-hPh"/>
                             <constraint firstItem="mpO-Z2-JXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="FnR-o0-KVq"/>
                             <constraint firstItem="qI2-w7-uKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="JXb-br-GnI"/>
                             <constraint firstItem="WcC-Bl-tjT" firstAttribute="bottom" secondItem="U1b-h6-OQg" secondAttribute="bottom" id="MO3-Z5-UMY"/>
+                            <constraint firstItem="ksa-3r-apQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MjO-HN-JUo"/>
                             <constraint firstItem="U1b-h6-OQg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WcC-Bl-tjT" secondAttribute="trailing" id="R0K-ok-7Hy"/>
                             <constraint firstItem="IZz-xM-Y21" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lcS-Vp-r7p" secondAttribute="trailing" id="SZ0-0o-fDd"/>
                             <constraint firstItem="85c-np-pVo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8qQ-Uo-hTT" secondAttribute="trailing" id="UGf-t8-Luc"/>
@@ -175,6 +221,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="85c-np-pVo" secondAttribute="trailing" constant="12" id="riU-3g-IJL"/>
                             <constraint firstItem="LGB-jO-sLS" firstAttribute="top" secondItem="1Ak-ly-nAq" secondAttribute="bottom" constant="24" id="s50-Va-hBg"/>
                             <constraint firstItem="OuW-oH-pPq" firstAttribute="top" secondItem="mpO-Z2-JXP" secondAttribute="bottom" constant="46" id="tHE-x4-HCu"/>
+                            <constraint firstItem="4Ql-6o-xZJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tJc-ag-ISR"/>
                             <constraint firstItem="1Ak-ly-nAq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hcS-aE-OTu" secondAttribute="trailing" id="uRg-8r-jUi"/>
                             <constraint firstItem="1Ak-ly-nAq" firstAttribute="top" secondItem="IZz-xM-Y21" secondAttribute="bottom" constant="24" id="x5a-vq-dIR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LGB-jO-sLS" secondAttribute="trailing" constant="12" id="xkp-Tf-e2c"/>
@@ -187,7 +234,7 @@
                     <connections>
                         <outlet property="decimalCommaLabel" destination="bu5-TK-wwy" id="pfT-f2-foB"/>
                         <outlet property="decimalLabel" destination="LGB-jO-sLS" id="V9M-Fg-Q4Z"/>
-                        <outlet property="frequencyInputField" destination="mpO-Z2-JXP" id="M7b-S7-hci"/>
+                        <outlet property="frequencyInputField" destination="mpO-Z2-JXP" id="Cxi-KF-qwY"/>
                         <outlet property="frequencyOutputField" destination="OuW-oH-pPq" id="MKO-9j-pnB"/>
                         <outlet property="groupingLabel" destination="U1b-h6-OQg" id="PC1-LD-j0B"/>
                         <outlet property="languageLabel" destination="1Ak-ly-nAq" id="uMR-Qa-J5E"/>
