@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var inputValue:NSNumber?
     var formatter: NumberFormatter?
     
+    
+    @IBOutlet weak var identifierLabel: UILabel!
     @IBOutlet weak var regionLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var decimalLabel: UILabel!
@@ -41,6 +43,7 @@ class ViewController: UIViewController {
         formatter?.minimumFractionDigits = 3
         formatter?.maximumFractionDigits = 6
 
+        identifierLabel.text = Locale.autoupdatingCurrent.identifier
         regionLabel.text = Locale.autoupdatingCurrent.regionCode
         languageLabel.text = Locale.autoupdatingCurrent.languageCode
         decimalLabel.text = Locale.autoupdatingCurrent.decimalSeparator
