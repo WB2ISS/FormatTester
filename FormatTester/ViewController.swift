@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var frequencyInputField: EnTextField!
     @IBOutlet weak var frequencyOutputField: UILabel!
     
+    let LocaleString = "fr_US"
     
-    var inputValue:NSNumber?
+    var inputValue: NSNumber?
+    var inputValueComma: NSNumber?
     var formatter: NumberFormatter?
+    var formatterComma: NumberFormatter?
     
     
     @IBOutlet weak var identifierLabel: UILabel!
@@ -25,6 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var decimalLabel: UILabel!
     @IBOutlet weak var groupingLabel: UILabel!
     @IBOutlet weak var decimalCommaLabel: UILabel!
+    @IBOutlet weak var formatterLabel: UILabel!
     
     @IBOutlet weak var textInputModeLabel: UILabel!
     
@@ -42,6 +46,12 @@ class ViewController: UIViewController {
         formatter?.minimumIntegerDigits = 1
         formatter?.minimumFractionDigits = 3
         formatter?.maximumFractionDigits = 6
+        
+        formatterComma = NumberFormatter()
+        formatterComma?.locale = Locale(identifier: LocaleString)
+        formatterComma?.minimumIntegerDigits = 1
+        formatterComma?.minimumFractionDigits = 3
+        formatterComma?.maximumFractionDigits = 6
 
         identifierLabel.text = Locale.autoupdatingCurrent.identifier
         regionLabel.text = Locale.autoupdatingCurrent.regionCode
@@ -83,10 +93,18 @@ class ViewController: UIViewController {
         
         if let inputString = frequencyInputField.text {
             inputValue = formatter?.number(from: inputString)
+            inputValueComma = formatterComma?.number(from: inputString)
             if let numberToDisplay = inputValue {
                 frequencyOutputField.text = formatter?.string(from: numberToDisplay)
+                formatterLabel.text = "System Default Locale"
             } else {
-                frequencyOutputField.text = "null value"
+                if let numberToDisplay = inputValueComma {
+                    frequencyOutputField.text = formatterComma?.string(from: numberToDisplay)
+                    formatterLabel.text = "\(LocaleString) Locale"
+                } else {
+                    frequencyOutputField.text = "Null Value"
+                    formatterLabel.text = ""
+                }
             }
             
         } else {
